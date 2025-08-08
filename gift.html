@@ -5,14 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choose Your Rakhi Gift</title>
 
-    <script>
-  window.onload = function () {
-    if (!window.musicPopup || window.musicPopup.closed) {
-      window.musicPopup = window.open('music.html', 'musicWindow', 'width=1,height=1,left=-1000,top=-1000');
-    }
-  };
-</script>
-
+   
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
@@ -20,12 +13,18 @@
             
             font-family: 'Poppins', sans-serif;
         }
-        .pink-heading {
-            background: linear-gradient(135deg, #ec4899, #f472b6, #fb7185);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: 600;
-        }
+       .pink-heading {
+    display: inline-block;
+    color: #ec4899; /* Fallback for unsupported browsers */
+    background: linear-gradient(135deg, #ec4899, #f472b6, #fb7185);
+    background-clip: text; /* Standard version */
+    -webkit-background-clip: text; /* WebKit-specific */
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+
+
     </style>
 </head>
 <body class="bg-pink-50 min-h-screen flex flex-col items-center justify-center px-4 py-10">
@@ -38,22 +37,22 @@
 
         <!-- Gift 1 -->
         <a href="https://wa.me/9653203776?text=Hey%20Bhaiya!%20I%20choose%20Gift%20%231%20for%20Raksha%20Bandhan%20%E2%9D%A4%EF%B8%8F" target="_blank">
-            <img src="teddy.jpeg"alt="Gift 1" class="rounded-xl shadow-lg hover:scale-105 transition duration-300">
+            <img src="images/teddy.jpeg"alt="Gift 1" class="rounded-xl shadow-lg hover:scale-105 transition duration-300">
         </a>
 
         <!-- Gift 2 -->
         <a href="https://wa.me/9653203776?text=Hey%20Bhaiya!%20I%20choose%20Gift%20%232%20for%20Raksha%20Bandhan%20%E2%9D%A4%EF%B8%8F" target="_blank">
-            <img src="eari.jpeg" alt="Gift 2" class="rounded-xl shadow-lg hover:scale-105 transition duration-300">
+            <img src="images/eari.jpeg" alt="Gift 2" class="rounded-xl shadow-lg hover:scale-105 transition duration-300">
         </a>
 
         <!-- Gift 3 -->
         <a href="https://wa.me/9653203776?text=Hey%20Bhaiya!%20I%20choose%20Gift%20%233%20for%20Raksha%20Bandhan%20%E2%9D%A4%EF%B8%8F" target="_blank">
-            <img src="neck.jpeg" alt="Gift 3" class="rounded-xl shadow-lg hover:scale-105 transition duration-300">
+            <img src="images/neck.jpeg" alt="Gift 3" class="rounded-xl shadow-lg hover:scale-105 transition duration-300">
         </a>
 
         <!-- Gift 4 -->
         <a href="https://wa.me/9653203776?text=Hey%20Bhaiya!%20I%20choose%20Gift%20%234%20for%20Raksha%20Bandhan%20%E2%9D%A4%EF%B8%8F" target="_blank">
-            <img src="cholo.jpeg" alt="Gift 4" class="rounded-xl shadow-lg hover:scale-105 transition duration-300">
+            <img src="images/cholo.jpeg" alt="Gift 4" class="rounded-xl shadow-lg hover:scale-105 transition duration-300">
         </a>
 
     </div>
